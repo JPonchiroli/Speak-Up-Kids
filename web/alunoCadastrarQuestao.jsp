@@ -33,7 +33,7 @@
             ques.setCod_atividade(codAtividade); 
             
             
-             if (ques.alterarQuestaoAluno();()){       
+             if (ques.alterarQuestaoAluno()){       
                 response.sendRedirect("alunoFazerAtividade.jsp?pmensagem=Questão salva com sucesso&aluno=" + vUsuAluno + "&senha=" + vSenhaAluno + "&codigo=" + vCodAluno + "&atividadeId=" + vCodAtividade + "&numeroQuestao=" + numeroQuestao);
             } else {
                 response.sendRedirect("alunoFazerAtividade.jsp?pmensagem=Problemas ao salvar Questão&aluno=" + vUsuAluno + "&senha=" + vSenhaAluno + "&codigo=" + vCodAluno + "&atividadeId=" + vCodAtividade + "&numeroQuestao=" + numeroQuestao);
